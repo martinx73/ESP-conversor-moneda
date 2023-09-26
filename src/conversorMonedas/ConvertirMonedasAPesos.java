@@ -3,6 +3,12 @@ package conversorMonedas;
 import javax.swing.JOptionPane;
 
 public class ConvertirMonedasAPesos {
+	public void ConvertirDolaresASoles(double valor) {
+		double solesDolar = valor * 3.77;
+		solesDolar = (double) Math.round(solesDolar *100d)/100;
+        JOptionPane.showMessageDialog(null, "Tienes $ " +solesDolar+ " Soles Peruanos");
+	}
+	
 	public void ConvertirDolaresAPesos(double valor) {
 		double monedaDolar = valor * 3739.00;
 		monedaDolar = (double) Math.round(monedaDolar *100d)/100;

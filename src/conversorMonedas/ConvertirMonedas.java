@@ -4,7 +4,12 @@ import javax.swing.JOptionPane;
 
 public class ConvertirMonedas {
 
-	
+	public void ConvertirSolesADolares(double valor) {
+		double solesDolares = valor / 3.77;
+		solesDolares = (double) Math.round(solesDolares *100d)/100;
+        JOptionPane.showMessageDialog(null, "Tienes $ " +solesDolares+ " Dolares");
+	}
+		
 	public void ConvertirPesosADolares(double valor) {
 		double monedaDolar = valor / 3739.00;
 		monedaDolar = (double) Math.round(monedaDolar *100d)/100;

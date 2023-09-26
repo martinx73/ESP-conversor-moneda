@@ -11,9 +11,12 @@ public class function {
     	String opcion = (JOptionPane.showInputDialog(null, 
     			"Elije la moneda a la que deseas convertir tu dinero ", "Monedas", 
     			JOptionPane.PLAIN_MESSAGE, null, new Object[] 
-    			{"De Pesos a Dólar", "De Pesos a Euro", "De Pesos a Libras","De Pesos a Yen","De Pesos a Won Coreano","De Dólar a Pesos", "De Euro a Pesos", "De Libras a Pesos","De Yen a Pesos","De Won Coreano a Pesos"}, 
+    			{"De Soles a Dólar", "De Pesos a Dólar", "De Pesos a Euro", "De Pesos a Libras","De Pesos a Yen","De Pesos a Won Coreano","De Dólar a Soles", "De Dólar a Pesos", "De Euro a Pesos", "De Libras a Pesos","De Yen a Pesos","De Won Coreano a Pesos"}, 
     			"Seleccion")).toString();
         switch(opcion) {
+        case "De Soles a Dólar":
+        	monedas.ConvertirSolesADolares(Minput);
+        	break;
         case "De Pesos a Dólar":
         	monedas.ConvertirPesosADolares(Minput);
         	break;
@@ -29,6 +32,9 @@ public class function {
         case "De Pesos a Won Coreano":
         	monedas.ConvertirPesosAWon(Minput);
         	break;    	    	                          
+        case "De Dólar a Soles":
+        	pesos.ConvertirDolaresASoles(Minput);
+        	break;        
         case "De Dólar a Pesos":
         	pesos.ConvertirDolaresAPesos(Minput);
         	break;
